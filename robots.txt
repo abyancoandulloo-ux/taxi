@@ -1,11 +1,11 @@
 # robots.txt for Mauritius Taxi Services
-# https://www.mauritiustaxiservices.com/
+# https://www.mauritiustaxi.org/
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.mauritiustaxiservices.com/sitemap.xml
+Sitemap: https://www.mauritiustaxi.org/sitemap.xml
 
 # Crawl delay (optional - be respectful to the server)
 # Crawl-delay: 1
