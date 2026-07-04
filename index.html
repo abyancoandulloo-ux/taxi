@@ -348,7 +348,7 @@
             transform: rotate(-45deg) translate(5px, -5px);
         }
 
-        /* ===== Hero ===== */
+        /* ===== Hero (unchanged) ===== */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -1447,7 +1447,7 @@
                     </ul>
                 </div>
 
-                <!-- Hotel Transfer (NEW) -->
+                <!-- Hotel Transfer -->
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-hotel"></i></div>
                     <h3>Hotel Transfer</h3>
@@ -1543,33 +1543,18 @@
 
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <div class="pricing-destination">Grand Baie</div>
-                    <div class="pricing-price">Rs 2,600</div>
-                    <div class="pricing-note">From the airport</div>
-                </div>
-                 <div class="pricing-card">
-                    <div class="pricing-destination">Belle Mare</div>
-                    <div class="pricing-price">Rs 2,600</div>
-                    <div class="pricing-note">From the airport</div>
-                </div>
-                 <div class="pricing-card">
-                    <div class="pricing-destination">Le Morne</div>
-                    <div class="pricing-price">Rs 2,600</div>
+                    <div class="pricing-destination">Grand Baie / Flic en Flac / Le Morne</div>
+                    <div class="pricing-price">Rs 2,600 <small>from</small></div>
                     <div class="pricing-note">From the airport</div>
                 </div>
                 <div class="pricing-card">
                     <div class="pricing-destination">Port Louis</div>
-                    <div class="pricing-price">Rs 2,000</div>
+                    <div class="pricing-price">Rs 2,000 <small>from</small></div>
                     <div class="pricing-note">From the airport</div>
                 </div>
                 <div class="pricing-card">
                     <div class="pricing-destination">Mahebourg</div>
-                    <div class="pricing-price">Rs 900</div>
-                    <div class="pricing-note">From the airport</div>
-                </div>
-                 <div class="pricing-card">
-                    <div class="pricing-destination">Flic en Flac</div>
-                    <div class="pricing-price">Rs 2400</div>
+                    <div class="pricing-price">Rs 900 <small>from</small></div>
                     <div class="pricing-note">From the airport</div>
                 </div>
             </div>
@@ -1654,16 +1639,10 @@
                         </div>
                     </div>
 
-                    <!-- Contact Details -->
-                    <div class="row-2">
-                        <div class="form-group">
-                            <label for="fullName">Full Name <span class="required">*</span></label>
-                            <input type="text" id="fullName" placeholder="e.g., John Doe" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number <span class="required">*</span></label>
-                            <input type="tel" id="phone" placeholder="e.g., +230 59127295" required />
-                        </div>
+                    <!-- Contact Details (Name ONLY) -->
+                    <div class="form-group">
+                        <label for="fullName">Full Name <span class="required">*</span></label>
+                        <input type="text" id="fullName" placeholder="e.g., John Doe" required />
                     </div>
 
                     <!-- Date -->
@@ -1994,7 +1973,6 @@
             e.preventDefault();
 
             const name = document.getElementById('fullName').value.trim();
-            const phone = document.getElementById('phone').value.trim();
             const service = serviceType.value;
             const passengers = document.getElementById('passengers').value;
             const luggage = document.getElementById('luggage').value || '0';
@@ -2019,18 +1997,16 @@
             }
 
             if (!name) { alert('Please enter your full name.'); return; }
-            if (!phone) { alert('Please enter your phone number.'); return; }
             if (!date) { alert('Please select a travel date.'); return; }
 
             // Format date
             const dateObj = new Date(date);
             const dateStr = dateObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
 
-            // Build clean WhatsApp message – no emojis, no bullet symbols, just plain text with line breaks
+            // Build clean WhatsApp message – no phone number field
             let msg = 'Hello! I\'d like to book a taxi in Mauritius.\n\n';
             msg += 'Service: ' + service + '\n';
             msg += 'Name: ' + name + '\n';
-            msg += 'Phone: ' + phone + '\n';
             msg += 'Pickup: ' + pickup + '\n';
             msg += 'Destination: ' + destination + '\n';
             msg += 'Passengers: ' + passengers + '\n';
@@ -2041,7 +2017,6 @@
             }
             msg += '\nPlease confirm availability and pricing. Thank you!';
 
-            // URL-encode the message (line breaks become %0A, but that's fine – WhatsApp will decode them)
             const waUrl = 'https://wa.me/23059127295?text=' + encodeURIComponent(msg);
             window.open(waUrl, '_blank');
         });
@@ -2061,7 +2036,7 @@
 
         console.log('🚕 Mauritius Taxi Services website loaded successfully.');
         console.log('📞 Booking: +230 59127295 (WhatsApp)');
-        console.log('📋 Clean WhatsApp message format applied.');
+        console.log('📋 Phone number field removed from booking form.');
     </script>
 </body>
 </html>
