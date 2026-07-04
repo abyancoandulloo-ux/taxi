@@ -6,7 +6,7 @@
 
   <!-- ===== HOMEPAGE ===== -->
   <url>
-    <loc>https://www.mauritiustaxiservices.com/</loc>
+    <loc>https://www.mauritiustaxi.org/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -14,59 +14,64 @@
 
   <!-- ===== CAR RENTAL PAGE ===== -->
   <url>
-    <loc>https://www.mauritiustaxiservices.com/rental.html</loc>
+    <loc>https://www.mauritiustaxi.org/rental.html</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- ===== ANCHOR LINKS (for completeness) ===== -->
-  <!-- These help Google understand your internal sections -->
-
   <url>
-    <loc>https://www.mauritiustaxiservices.com/#services</loc>
+    <loc>https://www.mauritiustaxi.org/#services</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.mauritiustaxiservices.com/#gallery</loc>
+    <loc>https://www.mauritiustaxi.org/#gallery</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.mauritiustaxiservices.com/#calculator</loc>
+    <loc>https://www.mauritiustaxi.org/#pricing</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.mauritiustaxiservices.com/#how-it-works</loc>
+    <loc>https://www.mauritiustaxi.org/#booking</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.mauritiustaxi.org/#how-it-works</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.mauritiustaxiservices.com/#testimonials</loc>
+    <loc>https://www.mauritiustaxi.org/#testimonials</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.mauritiustaxiservices.com/#faq</loc>
+    <loc>https://www.mauritiustaxi.org/#faq</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.mauritiustaxiservices.com/#contact</loc>
+    <loc>https://www.mauritiustaxi.org/#contact</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
